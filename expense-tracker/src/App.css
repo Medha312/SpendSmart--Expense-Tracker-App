@@ -1,0 +1,216 @@
+/* src/App.css */
+
+/* Global Light Theme */
+body, html, #root {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f4f8; /* light grey background */
+  color: #333; /* dark text */
+}
+
+/* Links */
+a {
+  color: #1E3A8A; /* dark blue */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Dashboard container */
+.dashboard-container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #ffffff; /* white card */
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+/* Info boxes */
+.info-boxes {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.info-box {
+  flex: 1;
+  background-color: #e6f0ff; /* light blue */
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.05);
+}
+
+.info-box h4 {
+  margin: 0;
+  color: #1E3A8A; /* dark blue */
+}
+
+.info-box p {
+  margin: 5px 0 0 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.charts-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  justify-content: space-between;
+}
+
+.chart-container {
+  flex: 1;
+  min-width: 300px;
+  max-width: 480px;
+  background-color: #f0f4ff;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  height: 320px;  /* fixed height */
+  display: flex;
+  flex-direction: column;
+}
+
+.chart-container h3 {
+  margin: 0 0 10px 0;
+  text-align: center;
+  color: #1E3A8A;
+}
+
+/* Force canvas to fill container height */
+.chart-container canvas {
+  max-height: 100% !important;
+  height: 100% !important;
+}
+
+/* Headings */
+h2, h3 {
+  color: #1E3A8A; /* dark blue */
+  margin-bottom: 10px;
+}
+
+/* Form */
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+form input, form select {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #cfe0ff;
+  background-color: #ffffff;
+  color: #333;
+  flex: 1;
+}
+
+form input:focus, form select:focus {
+  outline: 2px solid #1E90FF;
+}
+
+/* Buttons */
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #1E90FF; /* blue */
+  color: #fff;
+  font-weight: bold;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(30,144,255,0.5);
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 30px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+thead {
+  background-color: #cfe0ff; /* blue header */
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #d1d9e6;
+}
+
+tr:hover {
+  background-color: #e6f0ff; /* light blue hover */
+}
+
+/* Auth container */
+.auth-container {
+  max-width: 400px;
+  margin: 80px auto;
+  padding: 30px;
+  background-color: #ffffff; /* white card */
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.auth-container h2 {
+  margin-bottom: 20px;
+  color: #1E3A8A; /* dark blue */
+}
+
+.auth-container input {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 8px;
+  border: 1px solid #cfe0ff;
+  background-color: #ffffff;
+  color: #333;
+}
+
+.auth-container input:focus {
+  outline: 2px solid #1E90FF;
+}
+
+.auth-container button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 8px;
+  background-color: #1E90FF;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.auth-container button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(30,144,255,0.5);
+}
+
+.auth-container a {
+  color: #1E3A8A;
+  text-decoration: none;
+}
+
+.auth-container a:hover {
+  text-decoration: underline;
+}
