@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/SpendSmart--Expense-Tracker-App/static/css/main.3da53037.css",
+    "main.js": "/SpendSmart--Expense-Tracker-App/static/js/main.2e5e64cd.js",
+    "static/js/453.cd672270.chunk.js": "/SpendSmart--Expense-Tracker-App/static/js/453.cd672270.chunk.js",
+    "index.html": "/SpendSmart--Expense-Tracker-App/index.html",
+    "main.3da53037.css.map": "/SpendSmart--Expense-Tracker-App/static/css/main.3da53037.css.map",
+    "main.2e5e64cd.js.map": "/SpendSmart--Expense-Tracker-App/static/js/main.2e5e64cd.js.map",
+    "453.cd672270.chunk.js.map": "/SpendSmart--Expense-Tracker-App/static/js/453.cd672270.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3da53037.css",
+    "static/js/main.2e5e64cd.js"
+  ]
+}
