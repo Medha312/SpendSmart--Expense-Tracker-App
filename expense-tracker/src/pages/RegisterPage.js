@@ -62,7 +62,7 @@ export default function RegisterPage() {
       </form>
 
       <p style={{ marginTop: "10px" }}>
-        Already have an account? <Link to="http://localhost:3000/">Login</Link>
+        Already have an account? <Link to="/login">Login</Link>
       </p>
     </div>
   );

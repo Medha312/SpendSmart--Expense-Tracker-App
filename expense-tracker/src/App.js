@@ -1,20 +1,27 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import LoginPage from "./pages/LoginPage.js";
-import RegisterPage from "./pages/RegisterPage.js";
-import DashboardPage from "./pages/DashboardPage.js";
-import './App.css';
-import Header from "./components/Header.js";
+// App.js
+import { Routes, Route, Navigate } from "react-router-dom";
+import LoginPage from "./pages/LoginPage";
+import RegisterPage from "./pages/RegisterPage";
+import DashboardPage from "./pages/DashboardPage";
+import Header from "./components/Header";
+import "./App.css";
 
 function App() {
   return (
-    <Router>
+    <>
       <Header />
       <Routes>
-        <Route path="/" element={<LoginPage/>} />
-        <Route path="/register" element={<RegisterPage/>} />
-        <Route path="/dashboard" element={<DashboardPage/>} />
+        {/* Redirect root to /login */}
+        <Route path="/" element={<Navigate replace to="/login" />} />
+
+        <Route path="/login" element={<LoginPage />} />
+        <Route path="/register" element={<RegisterPage />} />
+        <Route path="/dashboard" element={<DashboardPage />} />
+
+        {/* Catch-all */}
+        <Route path="*" element={<Navigate replace to="/login" />} />
       </Routes>
-    </Router>
+    </>
   );
 }
 

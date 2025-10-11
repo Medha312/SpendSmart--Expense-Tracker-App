@@ -11,7 +11,7 @@ export default function Header() {
         justifyContent: "center",
       }}
     >
-      <img src="/logo.png" alt="SpendSmart" style={{ height: "50px", marginRight: "10px" }} />
+      <img src={`${process.env.PUBLIC_URL}/logo.png`} alt="SpendSmartLogo" style={{ height: "50px", marginRight: "10px" }} />
       <h1 style={{ color: "#1e3a8a" }}>SpendSmart</h1>
     </header>
   );
